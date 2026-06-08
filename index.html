@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="weather-app">
         <h1>Weather App</h1>
-        <p>Welcome to the Weather App!</p>
+        <p>Search for a city to get its weather information:</p>
 
         <div class="search-section">
             <input type="text" id="city-input" placeholder="Enter city name">
             <button id="search-button">Search</button>
+            <p id="loading-message">
+                Loading...
+            </p>
+        </div>
+
+        <p id="error-message">City Not Found</p>
+
+        <div class="weather-info">
+            <h2 id="city-name">City Name</h2>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p id="weather-condition">Clear Sky</p>
+            <h3 id="temperature">25°C</h3>
+
+            <div class="weather-details">
+                <p id="humidity">Humidity: 60%</p>
+                <p id="wind-speed">Wind Speed: 10 km/h</p>
+            </div>
+
         </div>
     </div>
 
